@@ -4,23 +4,225 @@
 <head>
   <meta charset="utf-8">
   <title>Automatic irrigation system</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(5, 28, 49);
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.052);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+header,
+main {
+    background-color: #fafafa0d;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.project_name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text_section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content_section {
+    margin-bottom: 10px;
+}
+
+.first_heading {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.content {
+    font-size: 18px;
+    margin: 8px;
+    font-weight: 600;
+}
+
+.list_items {
+
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 8px;
+}
+
+.button_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.github_button {
+    background-color: #ffffff21;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer {
+
+    background-color: #fafafa0d;
+    margin: 10px;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer_text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+.footer_item{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  </style>
 </head>
 
 <body>
   <header>
-    <h2>Automatic irrigation system</h2>
+    <h2 class="project_name">Automatic irrigation system</h2>
   </header>
   <main>
-    <h4>Automatic irrigation is the use of a device to operate irrigation structures, so the change of flow of water
-      from bays can occur in the absence of the irrigator</h4>
-    <br>
-    <hr>
-    <a href="https://trishul-a.github.io/rakesh/">Github repository </a>
+    <div class="text_section">
+      <div class="content_section">
+        <p class="first_heading">
+          Introduction
+        </p>
+        <p class="content">
+          The Automatic Irrigation System is designed to ensure plants get the right amount of water by checking the
+          soil's moisture levels. This project uses an Arduino Uno, a SEN6 soil moisture sensor, a DC water pump, and a
+          relay. The Arduino checks the soil moisture, and if the soil is too dry, it turns on the water pump to water
+          the soil.
+        </p>
+      </div>
+
+
+      <div class="text_section">
+        <div class="content_section">
+          <p class="first_heading">
+            Objectives
+          </p>
+
+          <p class="content list_items">
+            Automate the watering of plants based on soil moisture.
+          </p>
+          <p class="content list_items">
+
+            Reduce water wastage.
+          </p>
+          <p class="content list_items">
+            Minimize the need for manual watering.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="text_section">
+        <div class="content_section">
+          <p class="first_heading">
+            Components
+          </p>
+
+          <p class="content">
+            Arduino Uno: Controls the system.
+          </p>
+          <p class="content">SEN6 Soil Moisture Sensor: Measures soil moisture.
+
+          </p>
+          <p class="content">
+            DC Water Pump: Pumps water to the soil.
+          </p>
+          <p class="content">
+            Relay Module: Switches the water pump on and off.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div class="text_section">
+        <div class="content_section">
+          <p class="first_heading">
+            Conclusion
+          </p>
+
+          <p class="content">
+            This project shows that we can use simple electronic components and an Arduino Uno to automate irrigation.
+            The system works well to keep soil moisture at the right levels, reducing the need for manual watering.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <div class="text_section">
+        <div class="button_section">
+
+          <a class="github_button" href="https://github.com/rax-2/Automatic_irrigation_system">View project on
+            GitHub</a>
+        </div>
+      </div>
+
+
   </main>
   <footer>
-    <p>
-      &copy; <a href="https://trishul-a.github.io/rakesh/">Rakesh</a>
-    </p>
+    <div class="footer_item">
+
+      <a target="_blank" href="https://trishul-a.github.io/rakesh/">
+        <p class="footer_text">
+          &copy; 2024 | Rakesh
+        </p>
+      </a>
+    </div>
+    <div class="footer_item">
+
+      <a target="_blank" href="https://github.com/">
+        <p class="footer_text">
+          Powered by GitHub </p>
+      </a>
+    </div>
   </footer>
 </body>
 
